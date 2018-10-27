@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script> 
+    // en dialogruta där man skriver in vilken radie man vill att programmet ska räkna ut en cirkels omkrets och area
+    // jag lagrar svaret i variabeln rad
+        let rad = prompt("skriv in radie");
+
+    //jag gör en funktion som räknar ut cirkelsn omrets med hjälp av att ta emot radien som parameter
+            function omkrets(rad) {
+
+                //först räknar jag ut diametern
+                let diam = rad *2;
+                //sedan returnerar jag svaret på omkretsen med hjälp av att jag räknat ut diametern
+                return diam * Math.PI;
+            
+            }
+            //en ny funktion för räkna ut arean, den tar samma parameter som omrets dvs radien
+            function area (rad) {
+                //jag säknar ut arean med hjälp av diamtern och lagrar i en variabel
+                let ar = rad * rad * Math.PI;
+            //returnerar
+                return ar;
+            }
+            
+            //anropar funktionerna i 2 dialogrutor
+            alert(omkrets(rad));
+            alert(area(rad));
+        </script>
+    
+</body>
+</html>
